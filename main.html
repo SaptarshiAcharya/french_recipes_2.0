@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>French Recipe Website</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @font-face {
+            font-family: customfont;
+            src: url(Agbalumo-Regular.ttf);
+        }
+        #about-cuisine h2 {
+            text-align: center;
+            font-size: 40px;
+            font-family: customfont;
+        }
+        #about-cuisine p {
+            text-align: center;
+            font-size: 24px;                                   /* -> Increased text size for better readability <- */
+            font-family: 'Bahnschrift Light SemiCondensed';
+        }
+        P{
+            font-family: "Bahnschrift Light SemiCondensed";
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <nav class="sticky-nav">
+        <ul>
+            <li class="logo"><a href="#veg"><img src="site_logo.png" alt="French Restaurant Logo"></a></li>
+            <li class="menu-item"><a href="#veg">Saveurs de France: Trésors Culinaires</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="slideshow">
+        <div class="slide-wrapper">
+            <div class="image-container">
+                <img src="veg2.jpg" alt="Image 1">
+            </div>
+            <div class="image-container">
+                <img src="veg3.jpg" alt="Image 2">
+            </div>
+            <div class="image-container">
+                <img src="veg1.jpg" alt="Image 3">
+            </div>
+            <div class="image-container">
+                <img src="cheese1.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+    <div id="about-cuisine">
+        <h2><u>About French Cuisines</u></h2>
+        <p>
+            French cuisine, renowned globally for its elegance and variety, is a symphony of flavors, traditions, and culinary expertise. Encompassing a rich tapestry of regional specialties, it captures the essence of sophistication and artistry in gastronomy. From the iconic baguette and creamy Camembert to the exquisite coq au vin and the delicate macarons, each dish epitomizes centuries-old culinary heritage. French cooking techniques and ingredients showcase a commitment to quality and precision, celebrating fresh produce, aromatic herbs, and indulgent sauces. The diverse regions offer distinctive delights, from the bouillabaisse of Provence to the hearty cassoulet of Languedoc, providing an unparalleled gastronomic experience for food enthusiasts worldwide.
+        </p>
+    </div>
+    <div class="container">
+        <div id="veg" class="recipe-box veg">
+            <h2>Vegetarian Dishes</h2>
+            <p>Explore a variety of vegetarian French recipes.</p>
+            <a href="veg.html" class="read-more">READ MORE</a>
+        </div>
+        <div id="nonveg" class="recipe-box non-veg">
+            <h2>Non-Vegetarian Dishes</h2>
+            <p>Discover traditional non-vegetarian French recipes.</p>
+            <a href="non_veg.html" class="read-more">READ MORE</a>
+        </div>
+        <div id="wines" class="recipe-box wines">
+            <h2>Wines</h2>
+            <p>Learn about popular French wines and pairings.</p>
+            <a href="wines.html" class="read-more">READ MORE</a>
+        </div>
+        <div id="cheese" class="recipe-box cheese">
+            <h2>Cheese Selection</h2>
+            <p>Explore the diverse range of French cheeses.</p>
+            <a href="cheese.html" class="read-more">READ MORE</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Made By Saptarshi Acharya</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e77c7c;
+    color: #fff;
+}
+
+.slideshow {
+    overflow: hidden;
+    height: 500px;
+    width: auto; /* -> Width of a single image <- */
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide-wrapper {
+    display: flex;
+    animation: slide 9s linear infinite;        /* -> Half the time to loop through the images <- */
+}
+
+.image-container {
+    height: 500px;
+    width: 728px;
+    flex-shrink: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33.33%, 66.67% {
+        transform: translateX(-728px);                    /* -> Width of a single image <- */
+    }
+}
+
+.sticky-nav {
+    display: flex;
+    position: sticky; top: 0;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 80px;                   /* -> Adjust the height as needed <- */
+    background-color: #B22222;
+    z-index: 1000;
+    font-family: "Times New Roman", serif;
+    padding: 0 20px;
+}
+
+.sticky-nav .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.sticky-nav ul {
+    list-style: none;
+    display: flex;                /* -> Make the list items flex containers <- */
+    align-items: center;          /* -> Vertically center list items within the ul <- */
+}
+
+.sticky-nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.sticky-nav ul li {
+    margin: 0;
+}
+
+.sticky-nav li {
+    display: inline;
+    margin: 0 20px;    
+}
+
+
+
+.sticky-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 43px;
+    max-width: 1015px;
+    margin: 80px auto 20px;
+}
+
+.recipe-box {
+    background-color: #000f80;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recipe-box p {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #800080;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #333;
+    color: #fff;
+}
+/* Previous CSS remains the same */
+
+.cuisine-image {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cuisine-image img {
+    height: 477px;
+    width: 1389px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.recipe-box {
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-box:hover {
+    transform: scale(1.05);
+}
+html {
+    scroll-behavior: smooth;
+  }
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #a0a0db; /* Change the color to grey */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}  
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000f80 #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000f80;
+    border-radius: 10px;
+    border: 3px solid #000000;
+  }
